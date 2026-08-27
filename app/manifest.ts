@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function manifest(): MetadataRoute.Manifest { return { name: "SWOT Digital Marketing Sri Lanka", short_name: "SWOT", description: "Strategy, creative, media and measurable growth.", start_url: "/", display: "standalone", background_color: "#f7f4ec", theme_color: "#5426db", icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }] }; }

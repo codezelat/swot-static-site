@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">SWOT mark</title>
+  <path fill="#5B33F6" d="M4 4h24v24H4z" rx="4"/>
+  <path fill="#FF5A1F" d="M36 4h24v24H36z"/>
+  <path fill="#C8FF22" d="M4 36h24v24H4z"/>
+  <path fill="#F7F4EC" d="M36 36h24v24H36z"/>
+  <circle cx="32" cy="32" r="9" fill="#11100F"/>
+  <path d="M32 21v22M21 32h22" stroke="#F7F4EC" stroke-width="3" stroke-linecap="round"/>
+</svg>

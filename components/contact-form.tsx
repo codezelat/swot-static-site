@@ -25,6 +25,11 @@ export function ContactForm() {
     setMessage("");
     const form = event.currentTarget;
     const payload = Object.fromEntries(new FormData(form).entries());
+    if (!payload["cf-turnstile-response"]) {
+      setState("error");
+      setMessage("Please complete the security check and try again.");
+      return;
+    }
 
     try {
       const response = await fetch("/api/contact", {

@@ -43,7 +43,7 @@ export default function HomePage() {
           </Reveal>
         </div>
         <div className="hero-image-wrap" aria-hidden="true">
-          <Image src="/images/hero-strategist.webp" alt="" fill priority sizes="(max-width: 900px) 90vw, 58vw" className="hero-person" />
+          <Image src="/images/hero-strategist.webp" alt="" fill preload fetchPriority="high" sizes="(max-width: 900px) 90vw, 58vw" className="hero-person" />
         </div>
         <div className="hero-quadrant" aria-hidden="true"><span>S</span><span>W</span><span>O</span><span>T</span></div>
         <div className="hero-ticker" aria-hidden="true"><div>STRATEGY&nbsp; × &nbsp;CREATIVE&nbsp; × &nbsp;MEDIA&nbsp; × &nbsp;MEASUREMENT&nbsp; × &nbsp;STRATEGY&nbsp; × &nbsp;CREATIVE&nbsp; × &nbsp;MEDIA&nbsp; × &nbsp;MEASUREMENT</div></div>

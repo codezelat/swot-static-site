@@ -5,6 +5,7 @@ import { serviceDetails } from "@/data/service-details";
 import { insightBySlug } from "@/data/insights";
 import { pageMetadata } from "@/lib/metadata";
 
+export const dynamicParams = false;
 export function generateStaticParams() { return services.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const page = serviceBySlug(slug); return page ? pageMetadata(page.metaTitle, page.metaDescription, `/services/${slug}`, page.keywords) : {}; }
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {

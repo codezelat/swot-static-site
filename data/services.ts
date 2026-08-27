@@ -7,7 +7,7 @@ export const services: SeoLandingPage[] = [
     imageAlt: "Sri Lankan digital marketing team collaborating in a bright studio",
     title: "Digital Marketing Services in Sri Lanka",
     shortTitle: "Digital Strategy",
-    metaTitle: "Digital Marketing Agency Sri Lanka | SWOT",
+    metaTitle: "Digital Marketing Services Sri Lanka | SWOT",
     metaDescription:
       "Strategy, social, content, search, paid media and conversion support from a connected digital marketing agency in Sri Lanka.",
     headline: "One connected digital marketing plan. Every move accounted for.",

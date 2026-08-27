@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { FaqAccordion } from "./faq-accordion";
 import { JsonLd } from "./json-ld";
-import { Reveal } from "./reveal";
+import { Reveal, RevealListItem } from "./reveal";
 import type { SeoLandingPage } from "@/data/types";
 import { site } from "@/data/site";
 import type { ServiceSeoDetail } from "@/data/types";
@@ -47,7 +47,7 @@ export function SeoLanding({ page, parentLabel, parentHref, path, related, detai
         <div className="service-fit-grid"><Reveal><h3>A GOOD FIT WHEN.</h3><ul>{detail.goodFit.map((item) => <li key={item}>{item}</li>)}</ul></Reveal><Reveal delay={0.05}><h3>MEASUREMENT FOCUS.</h3><ul>{detail.measures.map((item) => <li key={item}>{item}</li>)}</ul></Reveal></div>
       </div></section> : null}
 
-      <section className="section-pad deliverables-section"><div className="section-shell deliverables-layout"><Reveal><h2>WHAT THE WORK CAN INCLUDE.</h2></Reveal><ol className="deliverable-list">{page.deliverables.map((item, index) => <Reveal key={item} delay={index * .035}><li><span>{String(index + 1).padStart(2, "0")}</span>{item}</li></Reveal>)}</ol></div></section>
+      <section className="section-pad deliverables-section"><div className="section-shell deliverables-layout"><Reveal><h2>WHAT THE WORK CAN INCLUDE.</h2></Reveal><ol className="deliverable-list">{page.deliverables.map((item, index) => <RevealListItem key={item} delay={index * .035}><span>{String(index + 1).padStart(2, "0")}</span>{item}</RevealListItem>)}</ol></div></section>
 
       <section className="section-pad paper-texture process-detail"><div className="section-shell process-detail-grid"><Reveal><h2>HOW WE MOVE.</h2></Reveal><div className="process-detail-list">{page.process.map((step) => <Reveal className="process-detail-item" key={step.title}><div><h3>{step.title}</h3><p>{step.text}</p></div></Reveal>)}</div></div></section>
 

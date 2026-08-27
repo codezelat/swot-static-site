@@ -53,6 +53,18 @@ const organisation = {
   knowsAbout: ["Digital marketing", "Social media marketing", "Content creation", "Performance marketing", "Search engine optimisation", "Advertising"],
 };
 
+const website = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${site.url}/#website`,
+  url: site.url,
+  name: site.name,
+  alternateName: "SWOT Sri Lanka",
+  description: site.description,
+  inLanguage: "en-LK",
+  publisher: { "@id": `${site.url}/#organization` },
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
@@ -61,7 +73,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         {children}
         <Footer />
-        <JsonLd data={organisation} />
+        <JsonLd data={[organisation, website]} />
       </body>
     </html>
   );

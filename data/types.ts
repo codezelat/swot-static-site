@@ -19,3 +19,11 @@ export type SeoLandingPage = {
   faq: Faq[];
   keywords: string[];
 };
+
+export type ServiceSeoDetail = {
+  scopeNote: string;
+  goodFit: string[];
+  decisions: { title: string; text: string }[];
+  measures: string[];
+  relatedInsights: string[];
+};

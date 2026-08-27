@@ -36,7 +36,7 @@ export function SeoLanding({ page, parentLabel, parentHref, path, related, detai
       <section className="outcome-strip" aria-label="Expected outcomes">{page.outcomes.map((outcome) => <div key={outcome}>{outcome}</div>)}</section>
 
       <section className="landing-media section-shell" aria-label={`${page.shortTitle} in action`}>
-        <Image src={page.image} alt={page.imageAlt} fill sizes="(max-width: 768px) 100vw, 94vw" priority />
+        <Image src={page.image} alt={page.imageAlt} fill sizes="(max-width: 768px) 100vw, 94vw" />
       </section>
 
       <section className="section-pad paper-texture"><div className="section-shell content-intro"><Reveal><h2>THE MOVE.</h2></Reveal><Reveal delay={0.06}><p>{page.intro}</p></Reveal></div></section>

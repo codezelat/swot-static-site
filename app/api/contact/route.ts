@@ -91,7 +91,7 @@ export async function POST(request: Request) {
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const from = process.env.CONTACT_FROM_EMAIL || "SWOT Website <noreply@swot.lk>";
+    const from = process.env.CONTACT_FROM_EMAIL || "SWOT Notifications <notifications@swot.lk>";
     const to = process.env.CONTACT_TO_EMAIL || "hello@swot.lk";
     const subject = `New SWOT enquiry from ${enquiry.name}${enquiry.company ? ` at ${enquiry.company}` : ""}`;
     const rows = [

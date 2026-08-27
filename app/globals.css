@@ -229,6 +229,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-aside h2 { margin: 0 0 20px; font-family: var(--font-display), sans-serif; font-size: clamp(3rem, 5vw, 6rem); line-height: .9; font-weight: 400; text-transform: uppercase; }
 .contact-aside p { max-width: 420px; }
 .contact-aside a { font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.contact-service-area { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); }
+.contact-service-area strong { display: block; margin-bottom: 6px; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
 .contact-form { position: relative; }
 .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .contact-form label { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }

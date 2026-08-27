@@ -56,7 +56,7 @@ The full keyword and post-launch plan is in [`docs/seo-strategy.md`](docs/seo-st
 
 1. Verify `swot.lk` in Resend and configure the production sender.
 2. Create the production Turnstile widget and set both keys.
-3. Add approved business address, phone and social profiles only after confirmation.
+3. Reconfirm the published CodeZela Colombo office, landline and social profiles before launch if company details change.
 4. Run `bun run check`.
 5. Verify desktop, mobile, keyboard navigation, the contact success path and the email received in the real inbox.
 6. Verify metadata, structured data, sitemap and live canonical URLs.

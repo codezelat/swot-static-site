@@ -42,11 +42,14 @@ const organisation = {
   legalName: site.legalName,
   url: site.url,
   email: site.email,
+  telephone: site.contact.phoneDisplay,
   logo: `${site.url}/brand/swot-mark.svg`,
   description: site.description,
   areaServed: [{ "@type": "Country", name: "Sri Lanka" }, { "@type": "Place", name: "Worldwide" }],
-  address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
+  address: { "@type": "PostalAddress", streetAddress: site.contact.streetAddress, addressLocality: "Colombo", postalCode: "00200", addressCountry: "LK" },
+  contactPoint: { "@type": "ContactPoint", telephone: site.contact.phoneDisplay, email: site.email, contactType: "sales", areaServed: "LK", availableLanguage: ["English", "Sinhala", "Tamil"] },
   parentOrganization: { "@type": "Organization", name: site.parent.name, url: site.parent.url },
+  sameAs: site.socials.map((social) => social.href),
   knowsAbout: ["Digital marketing", "Social media marketing", "Content creation", "Performance marketing", "Search engine optimisation", "Advertising"],
 };
 
